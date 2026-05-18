@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Gallery - Winning Path</title>
+
+<!-- FONT AWESOME -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- GOOGLE FONT -->
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+<body>
+
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="container nav-container">
+
+<div class="logo-box">
+
+<img src="images/logo.jpg">
+
+<h1>WINNING PATH</h1>
+
+</div>
+
+
+<nav class="menu">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="services.html">
+Services
+</a>
+
+<a href="gallery.html" class="active">
+Gallery
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero-section">
+
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
+
+<span class="hero-tag">
+
+OUR GALLERY
+
+</span>
+
+
+<h2>
+
+Moments Of
+Growth & Success
+
+</h2>
+
+
+<p>
+
+Explore coaching sessions,
+leadership programs and
+business training highlights.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- FILTER -->
+
+<section class="filter-section">
+
+<div class="container filter-container">
+
+
+<!-- SEARCH -->
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input type="text"
+id="searchInput"
+placeholder="Search gallery..."
+onkeyup="filterGallery()">
+
+</div>
+
+
+
+<!-- DATE -->
+
+<div class="date-box">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<input type="date"
+id="dateFilter"
+onchange="filterGallery()">
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- GALLERY -->
+
+<section class="gallery-section">
+
+<div class="container">
+
+
+<div class="gallery-grid"
+id="galleryGrid">
+
+
+
+<!-- ITEM -->
+
+<div class="gallery-card"
+data-title="Leadership Training"
+data-date="2026-03-15">
+
+<img src="images/gallery1.jpg">
+
+<div class="gallery-overlay">
+
+<span>
+
+15 March 2026
+
+</span>
+
+<h3>
+
+Leadership Training
+
+</h3>
+
+<p>
+
+Interactive leadership and
+confidence development program.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ITEM -->
+
+<div class="gallery-card"
+data-title="Business Workshop"
+data-date="2026-04-12">
+
+<img src="images/gallery2.jpg">
+
+<div class="gallery-overlay">
+
+<span>
+
+12 April 2026
+
+</span>
+
+<h3>
+
+Business Workshop
+
+</h3>
+
+<p>
+
+Modern business branding and
+digital marketing strategies.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ITEM -->
+
+<div class="gallery-card"
+data-title="Youth Program"
+data-date="2026-01-10">
+
+<img src="images/gallery3.jpg">
+
+<div class="gallery-overlay">
+
+<span>
+
+10 January 2026
+
+</span>
+
+<h3>
+
+Youth Program
+
+</h3>
+
+<p>
+
+Empowering youths through
+leadership and communication.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ITEM -->
+
+<div class="gallery-card"
+data-title="Study Coaching"
+data-date="2025-11-25">
+
+<img src="images/gallery4.jpg">
+
+<div class="gallery-overlay">
+
+<span>
+
+25 November 2025
+
+</span>
+
+<h3>
+
+Study Coaching
+
+</h3>
+
+<p>
+
+Helping students improve focus
+and academic performance.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ITEM -->
+
+<div class="gallery-card"
+data-title="Team Building"
+data-date="2025-08-14">
+
+<img src="images/gallery5.jpg">
+
+<div class="gallery-overlay">
+
+<span>
+
+14 August 2025
+
+</span>
+
+<h3>
+
+Team Building
+
+</h3>
+
+<p>
+
+Interactive activities for
+better teamwork and collaboration.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- ITEM -->
+
+<div class="gallery-card"
+data-title="Entrepreneurship"
+data-date="2025-06-20">
+
+<img src="images/gallery6.jpg">
+
+<div class="gallery-overlay">
+
+<span>
+
+20 June 2025
+
+</span>
+
+<h3>
+
+Entrepreneurship
+
+</h3>
+
+<p>
+
+Inspiring innovation and
+business thinking among youths.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container footer-content">
+
+
+<div>
+
+<h3>
+
+Winning Path
+
+</h3>
+
+
+<p>
+
+Empowering minds through coaching,
+youth leadership and business training.
+
+</p>
+
+</div>
+
+
+
+<div class="footer-links">
+
+<a href="https://www.facebook.com/drlavapirathan"
+target="_blank">
+
+<i class="fa-brands fa-facebook"></i>
+
+Facebook
+
+</a>
+
+
+
+<a href="https://www.youtube.com/@lavapirathan-saranyah"
+target="_blank">
+
+<i class="fa-brands fa-youtube"></i>
+
+YouTube
+
+</a>
+
+
+
+<a href="https://wa.me/94770072822"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+
+
+<a href="mailto:admin@winningpath.lk">
+
+<i class="fa-solid fa-envelope"></i>
+
+admin@winningpath.lk
+
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<div class="copyright">
+
+© 2026 Winning Path.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+
+<!-- JS -->
+
+<script>
+
+function filterGallery(){
+
+let search =
+document.getElementById("searchInput")
+.value.toLowerCase();
+
+let selectedDate =
+document.getElementById("dateFilter")
+.value;
+
+let cards =
+document.querySelectorAll(".gallery-card");
+
+cards.forEach(card => {
+
+let title =
+card.dataset.title.toLowerCase();
+
+let cardDate =
+card.dataset.date;
+
+let matchSearch =
+title.includes(search);
+
+let matchDate =
+selectedDate === "" ||
+cardDate === selectedDate;
+
+if(matchSearch && matchDate){
+
+card.style.display = "block";
+
+}
+
+else{
+
+card.style.display = "none";
+
+}
+
+});
+
+}
+
+</script>
+
+
+
+</body>
+</html>
